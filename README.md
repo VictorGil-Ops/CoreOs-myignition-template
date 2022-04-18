@@ -56,7 +56,7 @@ sudo hostnameclt set-hostname master-node
 # ip
 sudo nmcli connection show 
 
-nmcli connection mod 'ens192' \
+sudo nmcli connection mod 'ens192' \
 ipv4.method manual \
 connection.autoconnect yes \
 ipv4.addresses 192.168.205.210/24 \
@@ -65,6 +65,6 @@ ipv4.dns 1.1.1.1 \
 +ipv4.dns 1.0.0.1
 
 # reboot
-systemctl reboot
+sudo systemctl reboot
 
 ```
