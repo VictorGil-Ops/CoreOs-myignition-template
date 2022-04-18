@@ -45,3 +45,26 @@ Hash and use the `local_* ign file`, the encoding is `gzip+base64`
 H4sIAAAAAAACA02PMQ+CQAyFd34FuVnuTNhYHRzZXA1eKjThrqRXNIbcf7eCGKfmfX3pe12KsjTYRxSkaJpyUa3EU7xj/9NKGKax8/CHFCaaeWVmEJlS4xx3T9ujDPNtTsB6RiCK9RTcBb0Qn3Gs2im5EzG0qQqvPbsSCJog4EKH0TEEErh6tVG67jurbvONz+vMh63wAzhtH5ja1vb4ceUiF2/iXTsC4AAAAA==
 
 ```
+
+## Change hostname and IP
+
+```bash
+
+# hostname
+hostnameclt set-hostname master-node
+
+# ip
+nmcli connection show 
+
+nmcli connection mod 'Wired connection 1' \
+ipv4.method manual \
+connection.autoconnect yes \
+ipv4.addresses 192.168.205.210/24 \
+ipv4.gateway 192.168.205.2 \
+ipv4.dns 1.1.1.1 \
++ipv4.dns 1.0.0.1
+
+# reboot
+systemctl reboot
+
+```
