@@ -40,4 +40,8 @@ Hash and use the `local_* ign file`, the encoding is `gzip+base64`
 
 ## HASH for this local ign (local_coreos_template.ign), use directly
 
-`H4sIAAAAAAACA02PMQ+CQAyFd34FuVnuTNhYHRzZXA1eKjThrqRXNIbcf7eCGKfmfX3pe12KsjTYRxSkaJpyUa3EU7xj/9NKGKax8/CHFCaaeWVmEJlS4xx3T9ujDPNtTsB6RiCK9RTcBb0Qn3Gs2im5EzG0qQqvPbsSCJog4EKH0TEEErh6tVG67jurbvONz+vMh63wAzhtH5ja1vb4ceUiF2/iXTsC4AAAAA==`
+```bash
+
+H4sIAAAAAAACA02PMQ+CQAyFd34FuVnuTNhYHRzZXA1eKjThrqRXNIbcf7eCGKfmfX3pe12KsjTYRxSkaJpyUa3EU7xj/9NKGKax8/CHFCaaeWVmEJlS4xx3T9ujDPNtTsB6RiCK9RTcBb0Qn3Gs2im5EzG0qQqvPbsSCJog4EKH0TEEErh6tVG67jurbvONz+vMh63wAzhtH5ja1vb4ceUiF2/iXTsC4AAAAA==
+
+```
