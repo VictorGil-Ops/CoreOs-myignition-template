@@ -26,6 +26,7 @@ butane --pretty --strict coreos_template.bu > coreos_template.ign
 # hash ign file
 cat coreos_template.ign | gzip -9 | base64 -w0 -
 
-``
+```
+
 ## PASTE de HASH inline
 ![IMAGE](https://github.com/VictorGil-Ops/CoreOs-myignition-template/blob/main/images/vmware_ova_deploy.png)
