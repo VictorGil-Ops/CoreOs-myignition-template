@@ -51,12 +51,12 @@ H4sIAAAAAAACA02PMQ+CQAyFd34FuVnuTNhYHRzZXA1eKjThrqRXNIbcf7eCGKfmfX3pe12KsjTYRxSk
 ```bash
 
 # hostname
-hostnameclt set-hostname master-node
+sudo hostnameclt set-hostname master-node
 
 # ip
-nmcli connection show 
+sudo nmcli connection show 
 
-nmcli connection mod 'Wired connection 1' \
+nmcli connection mod 'ens192' \
 ipv4.method manual \
 connection.autoconnect yes \
 ipv4.addresses 192.168.205.210/24 \
