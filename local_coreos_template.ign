@@ -1,0 +1,10 @@
+{
+  "ignition": {
+    "config": {
+      "replace": {
+        "source": "https://raw.githubusercontent.com/VictorGil-Ops/CoreOs-myignition-template/main/remote_coreos_template.ign"
+      }
+    },
+    "version": "3.3.0"
+  }
+}
