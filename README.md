@@ -34,6 +34,6 @@ cat local_coreos_template.ign | gzip -9 | base64 -w0 -
 
 ## PASTE de HASH inline
 
-Hash and use the `local_* ign file`, the encoding is `gzip+base64`.
+Hash and use the `local_* ign file`, the encoding is `gzip+base64`
 
-![IMAGE](https://github.com/VictorGil-Ops/CoreOs-myignition-template/blob/main/images/vmware_ova_deploy.png)
+![](https://github.com/VictorGil-Ops/CoreOs-myignition-template/blob/main/images/vmware_ova_deploy.png)
