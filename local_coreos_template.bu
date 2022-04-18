@@ -1,0 +1,6 @@
+variant: fcos
+version: 1.4.0
+ignition:
+  config:
+    replace:
+      source: https://raw.githubusercontent.com/VictorGil-Ops/CoreOs-myignition-template/main/remote_coreos_template.ign
