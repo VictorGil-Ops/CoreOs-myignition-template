@@ -1,0 +1,41 @@
+{
+  "ignition": {
+    "version": "3.3.0"
+  },
+  "passwd": {
+    "users": [
+      {
+        "name": "core",
+        "passwordHash": "$1$core$rh4BhB0ZR3KPqp.PgwaXM1",
+        "sshAuthorizedKeys": [
+          "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDdx+VC4aBz67tV8zWvNsV8DEY1Tj5PD/jYUXEb0Anza6cDQMb39EFpltbkROsjbJhHNl2qINgmrIFJF/p8v7urOlxZYRyWO71IgQNn2gtURfFkgF4GG63KHrDYiwpCeGksAQYJv9hFKhfGl4shCBpN+VtNx9N6kOWc68j/plqhdDjRqpQ8wExMkol6Kl5dCDeiv3Very3juGfwCCs+cEjpYLgTVd4/wVuWy8HNkmoQzQp2vDabbkPFMjp/wS+1LHNy/YXK3jj5LwdhuNqENK1t+YpJDii5iXMGRxCiaYrR7uN6HMwjNR/uTqtAHD3K9vCNA+YrJv/YxLgI7m8jHfXo4LZiXZTAQROMwYsAepJEpSp/XRjvxP+nOsBhJ//4620M+1Jc5CczIHIAUM8rd5nxx+attVCipuxQUZ83rr9powDFZfUpzMVhr6QnbtV12qH/vCmZ6tmo0QApYe2yLQUECBDvrpsVSIkfMO9egyiIL6l2QJrxhb8qie91o1Bx2+k= root@MANTIS"
+        ]
+      }
+    ]
+  },
+  "storage": {
+    "files": [
+      {
+        "path": "/etc/ssh/sshd_config.d/20-enable-passwords.conf",
+        "contents": {
+          "source": "data:,PasswordAuthentication%20yes%0A"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/hostname",
+        "contents": {
+          "source": "data:,plantilla-coreos"
+        },
+        "mode": 420
+      },
+      {
+        "path": "/etc/NetworkManager/system-connections/ens192.nmconnection",
+        "contents": {
+          "source": "data:,%5Bconnection%5D%0Aid%3Dens192%0Atype%3Dethernet%0Ainterface-name%3Dens192%0A%5Bipv4%5D%0Aaddress1%3D192.168.205.200%2F24%2C192.168.205.2%0Adns%3D1.1.1.1%3B%0Adns-search%3D%0Amay-fail%3Dfalse%0Amethod%3Dmanual%0A"
+        },
+        "mode": 384
+      }
+    ]
+  }
+}
